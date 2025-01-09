@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Demo16 {
+public class Demo016 {
     static int min;
 
     public static void main(String[] args) {
