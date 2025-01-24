@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class Demo009 {
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the radius of the circle: ");
-        double radius = s1.nextDouble();
+        double radius = scanner.nextDouble();
 
-        
-        double area = Math.PI * Math.pow(radius, 2);
+        double area = 3.14 * radius * radius;
 
-    
-        System.out.printf("The area of the circle with radius %.2f is %.2f\n", radius, area);
+        System.out.println("The area of the circle is: " + area);
+
+        scanner.close();
     }
 }

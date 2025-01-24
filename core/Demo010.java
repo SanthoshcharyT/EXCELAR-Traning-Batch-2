@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 public class Demo010 {
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the base of the triangle: ");
-        double base = s1.nextDouble();
+        double base = scanner.nextDouble();
 
         System.out.print("Enter the height of the triangle: ");
-        double height = s1.nextDouble();
+        double height = scanner.nextDouble();
 
-        double area = 0.5 * base * height;
+        double area = (base * height) / 2;
 
-        System.out.printf("The area of the triangle with base %.2f and height %.2f is %.2f\n", base, height, area);
+        System.out.printf("The area of the triangle is: %.2f%n", area);
+
+        scanner.close();
     }
 }
