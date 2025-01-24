@@ -8,11 +8,11 @@ public class Demo026 {
 
         if (a >= 'a' && a <= 'z') {
             System.out.println("The Character is lowerCase. ");
-        }else if(a >= 'A' && a <= 'Z'){
+        } else if (a >= 'A' && a <= 'Z') {
             System.out.println("The Character is upperCase. ");
-        }else if(a >= 0 && a<= 9){
+        } else if (a >= 0 && a <= 9) {
             System.out.println("The input is a digit. ");
-        }else{
+        } else {
             System.out.println("The input is Special. ");
         }
 
