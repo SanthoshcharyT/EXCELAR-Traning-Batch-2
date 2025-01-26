@@ -1,11 +1,13 @@
+/*Find the number of vowels and consonants in a string */
+
 import java.util.Scanner;
 
 public class Demo026 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s1 = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+        String input = s1.nextLine();
 
         String n = input.toLowerCase();
 
