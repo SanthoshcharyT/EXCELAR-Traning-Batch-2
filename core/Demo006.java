@@ -4,7 +4,7 @@ public class Demo006 {
         String password = "12345";
 
         while((username == "Santhosh") && (password == "12345")){
-                System.out.println(" Hello Santhosh,Happy New year");
+                System.out.println(" Welcome to 2025.");
                 break;
         }
     }
