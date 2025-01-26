@@ -1,4 +1,4 @@
-public class Demo3 {
+public class Demo003 {
     public static void main(String[] main) {
         int num1 = 20;
         int num2 = 10;
