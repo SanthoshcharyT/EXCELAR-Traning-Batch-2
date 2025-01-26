@@ -1,3 +1,5 @@
+/*Java program to check the largest number between 2 numbers */
+
 import java.util.Scanner;
 
 public class Demo035 {
@@ -12,7 +14,7 @@ public class Demo035 {
         if(a>b){
             System.out.println("The First Number " + a + "is greater than " + b);
         }else if(a<b){
-            System.out.println("The Second Number " + b + "is greater than " + a);
+            System.out.println("The Second Number " + b + " is greater than " + a);
 
         }
 
