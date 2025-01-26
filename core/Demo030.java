@@ -1,26 +1,27 @@
-import java.util.Scanner;
+import java.util.*;
 
-class Demo030 {
+class ArrayListCode {
+    void arrayListMethod() {
+        ArrayList<Integer> araylist1 = new ArrayList<>();
+        araylist1.add(100);
+        araylist1.add(200);
+        araylist1.add(100);
+        araylist1.add(0);
+        araylist1.add(900);
+        araylist1.add(600);
+        System.out.println("Elements of the list: ");
 
-    public void swap() {
-        Scanner s1 = new Scanner(System.in);
-        System.out.print("Enter the First Number: ");
-        int a = s1.nextInt();
+        Iterator<Integer> iterate = araylist1.iterator();
 
-        System.out.print("Enter the Second Number: ");
-        int b = s1.nextInt();
-
-        int temp = a;
-        a = b;
-        b = temp;
-
-        System.out.println("After swapping:");
-        System.out.println("First Number: " + a);
-        System.out.println("Second Number: " + b);
+        while (iterate.hasNext()) {
+            System.out.println(iterate.next());
+        }
     }
+}
 
+public class Demo030 {
     public static void main(String[] args) {
-        Demo030 s1 = new Demo030();
-        s1.swap();
+        ArrayListCode obj = new ArrayListCode();
+        obj.arrayListMethod();
     }
 }
