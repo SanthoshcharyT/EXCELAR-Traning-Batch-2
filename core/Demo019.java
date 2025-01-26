@@ -1,30 +1,24 @@
+import java.util.Scanner;
+
 public class Demo019 {
+    static int num;
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome(232));
-        System.out.println(isPalindrome(345)); 
-        System.out.println(isPalindrome(-121));
-        System.out.println(isPalindrome(0));
-    }
+        Scanner s1 = new Scanner(System.in);
+        System.out.print("Enter the Number: ");
+        num = s1.nextInt();
 
-    public static int isPalindrome(int x) {
-        if (x <= 0) {
-            return -1;
+        int first = 0;
+        int second = 1;
+
+        System.out.println("Fibonacci series up to " + num + " terms:");
+        for (int i = 1; i <= num; i++) {
+            System.out.print(first + " ");
+            int next = first + second;
+            first = second;
+            second = next;
         }
 
-        int original = x; 
-        int reversed = 0;
-
-        while (x != 0) {
-            int digit = x % 10; 
-            reversed = reversed * 10 + digit; 
-            x /= 10; 
-        }
-
-        if (original == reversed) {
-            return 1;
-        } else {
-            return 0;
-        }
+        s1.close();
     }
 }
