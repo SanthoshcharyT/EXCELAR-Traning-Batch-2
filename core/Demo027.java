@@ -1,3 +1,5 @@
+/*Check if the given number is prime or not */
+
 import java.util.Scanner;
 
 public class Demo027 {
@@ -6,9 +8,9 @@ public class Demo027 {
         System.out.print("Enter the Number: ");
         int num = s1.nextInt();
 
-        if(num%2 != 0){
+        if (num % 2 != 0) {
             System.out.println("The given Number " + num + " is prime.");
-        }else{
+        } else {
             System.out.println("The number " + num + " is not Prime");
         }
     }
