@@ -1,23 +1,21 @@
-/*java program to check character lowercase or uppercase or digit */
-
 import java.util.Scanner;
 
 public class Demo025 {
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
-        System.out.print("Enter the Character: ");
-        char a = s1.nextLine().charAt(0);
+        Scanner scanner = new Scanner(System.in);
 
-        if (a >= 'a' && a <= 'z') {
-            System.out.println("The Character is lowerCase. ");
-        }else if(a >= 'A' && a <= 'Z'){
-            System.out.println("The Character is upperCase. ");
-        }else if(a >= 0 && a<= 9){
-            System.out.println("The input is a digit. ");
-        }else{
-            System.out.println("The input is neither Digit or character ");
+        System.out.print("Enter a word: ");
+        String word = scanner.nextLine();
+
+        String original = word.toLowerCase();
+        String reversed = new StringBuilder(original).reverse().toString();
+
+        if (original.equals(reversed)) {
+            System.out.println(word + " is a palindrome.");
+        } else {
+            System.out.println(word + " is not a palindrome.");
         }
 
+        scanner.close();
     }
-
 }
