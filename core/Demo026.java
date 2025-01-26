@@ -2,20 +2,26 @@ import java.util.Scanner;
 
 public class Demo026 {
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
-        System.out.print("Enter the Character: ");
-        char a = s1.nextLine().charAt(0);
+        Scanner scanner = new Scanner(System.in);
 
-        if (a >= 'a' && a <= 'z') {
-            System.out.println("The Character is lowerCase. ");
-        } else if (a >= 'A' && a <= 'Z') {
-            System.out.println("The Character is upperCase. ");
-        } else if (a >= 0 && a <= 9) {
-            System.out.println("The input is a digit. ");
-        } else {
-            System.out.println("The input is Special. ");
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        String n = input.toLowerCase();
+
+        int vowels = 0, consonants = 0;
+
+        for (int i = 0; i < n.length(); i++) {
+            char ch = n.charAt(i);
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                vowels++;
+            } else if (ch >= 'a' && ch <= 'z') {
+                consonants++;
+            }
         }
 
+        System.out.println("Number of vowels: " + vowels);
+        System.out.println("Number of consonants: " + consonants);
     }
-
 }
