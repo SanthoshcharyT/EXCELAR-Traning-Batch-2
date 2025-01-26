@@ -28,7 +28,7 @@ public class Demo008 {
                 password = scanner.nextLine();
             } else {
                 System.out.println("Invalid response. Please reply with 'Yes' or 'No'.");
-                continue; // Restart the loop for invalid response
+                continue; 
             }
 
         } while (!loginId.equals(storedLoginId) || !password.equals(storedPassword));
