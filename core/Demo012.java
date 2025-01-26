@@ -2,20 +2,15 @@ import java.util.Scanner;
 
 public class Demo012 {
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a string: ");
-        String n = s1.nextLine();
+        System.out.print("Enter the radius of the Circle: ");
+        double radius = scanner.nextDouble();
 
-        String reversed = "";
-        for (int i = n.length() - 1; i >= 0; i--) {
-            reversed += n.charAt(i);
-        }
+        double area = 3.14  * radius *radius;
 
-        if (n.equals(reversed)) {
-            System.out.println("The string is a palindrome.");
-        } else {
-            System.out.println("The string is not a palindrome.");
-        }
+        System.out.printf("The area of Circle : " +area);
+
+        scanner.close();
     }
 }
