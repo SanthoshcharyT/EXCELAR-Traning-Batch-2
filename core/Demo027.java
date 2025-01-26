@@ -3,15 +3,13 @@ import java.util.Scanner;
 public class Demo027 {
     public static void main(String[] args) {
         Scanner s1 = new Scanner(System.in);
-        System.out.print("Enter the Alphbet: ");
-        char a = s1.next().charAt(0);
+        System.out.print("Enter the Number: ");
+        int num = s1.nextInt();
 
-        if (a >= 'a' && a <= 'z') {
-            if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
-                System.out.println("The Character is Vowel. ");
-            }
-        } else {
-            System.out.println("The Charater is consonant. ");
+        if(num%2 != 0){
+            System.out.println("The given Number " + num + " is prime.");
+        }else{
+            System.out.println("The number " + num + " is not Prime");
         }
     }
 
