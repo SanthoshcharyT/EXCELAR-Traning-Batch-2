@@ -1,3 +1,5 @@
+/*Array of friends' names, phone numbers, and addresses */
+
 public class Demo024 {
     public static void main(String[] args) {
         String[][] friends = {
