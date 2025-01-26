@@ -1,3 +1,6 @@
+/*  Array of 10 friends' names */
+
+
 public class Demo029 {
     public static void main(String[] args) {
         String[][] friends = {
