@@ -1,21 +1,16 @@
- /*Checking lowercase or UpperCase*/
-
-import java.util.Scanner;
-
 public class Demo024 {
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
+        String[][] friends = {
+            {"Tony", "8074038050","Adilabad"},
+            {"Sai", "7386855253", "Siddipet"},
+            {"Madhav", "8790908879", "Shameerpet"}
+        };
 
-        System.out.print("Enter a character: ");
-        char ch = s1.next().charAt(0);
-
-        if (ch >= 'A' && ch <= 'Z') {
-            System.out.println(ch + " is an uppercase letter.");
-        } else if (ch >= 'a' && ch <= 'z') {
-            System.out.println(ch + " is a lowercase letter.");
-        } else {
-            System.out.println(ch + " is not a letter.");
+        for (String[] friend : friends) {
+            System.out.println("Name: " + friend[0]);
+            System.out.println("Phone Number: " + friend[1]);
+            System.out.println("Address: " + friend[2]);
+            System.out.println("----------------------");
         }
-
     }
 }
