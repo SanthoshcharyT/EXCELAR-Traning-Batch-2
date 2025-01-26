@@ -1,22 +1,21 @@
 import java.util.Scanner;
 
 public class Demo016 {
-    static int min;
-
     public static void main(String[] args) {
         Scanner s1 = new Scanner(System.in);
 
-        System.out.print("Enter the number of minutes: ");
-        min = s1.nextInt();
+        System.out.print("Enter a string: ");
+        String n = s1.nextLine();
 
-        int minutesInYear = 60 * 24 * 365; 
-        int years = min / minutesInYear; 
-        int remainingMinutes = min % minutesInYear; 
-        int days = remainingMinutes / (60 * 24); 
+        String reversed = "";
+        for (int i = n.length() - 1; i >= 0; i--) {
+            reversed += n.charAt(i);
+        }
 
-       
-        System.out.println(min + " minutes is approximately " + years + " years and " + days + " days.");
-
-        s1.close();
+        if (n.equals(reversed)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
     }
 }
