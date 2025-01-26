@@ -1,24 +1,15 @@
 import java.util.Scanner;
 
-public class Demo017 {
-    static int num;
-
+public class Demo017{
     public static void main(String[] args) {
         Scanner s1 = new Scanner(System.in);
-        System.out.print("Enter the Number: ");
-        num = s1.nextInt();
+        System.out.print("Enter the First Number: ");
+        int num1 = s1.nextInt();
 
-        int first = 0;
-        int second = 1;
+        System.out.print("Enter the Second Number: ");
+        int num2 = s1.nextInt();
 
-        System.out.println("Fibonacci series up to " + num + " terms:");
-        for (int i = 1; i <= num; i++) {
-            System.out.print(first + " ");
-            int next = first + second;
-            first = second;
-            second = next;
-        }
-
-        s1.close();
+        int a = num1 +num2;
+        System.out.println("The Sum of " + num1 + " and " + num2 + " is: " + a);
     }
 }
