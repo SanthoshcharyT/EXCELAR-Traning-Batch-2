@@ -1,21 +1,23 @@
-//Write a Java program to count the number of digits of a number
+//Write a Java program to print the sum of digits of a number
 
 import java.util.Scanner;
 
 public class Demo048 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        
         System.out.print("Enter a number: ");
-        long number = scanner.nextLong();
-
-        int digitCount = (number == 0) ? 1 : 0;
-
+        int number = scanner.nextInt();
+        
+        int sum = 0;
+        
         while (number != 0) {
-            number /= 10;
-            digitCount++;
+            sum += number % 10;  
+            number /= 10;         
         }
-
-        System.out.println("The number of digits is: " + digitCount);
+        
+        System.out.println("The sum of digits is: " + sum);
+        
+        scanner.close();
     }
 }
