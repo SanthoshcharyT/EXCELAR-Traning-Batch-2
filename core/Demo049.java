@@ -1,4 +1,4 @@
-//Write a Java program to print the sum of digits of a number
+//Write a Java program to reverse a number
 
 import java.util.Scanner;
 
@@ -9,14 +9,15 @@ public class Demo049 {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
         
-        int sum = 0;
+        int reversed = 0;
         
         while (number != 0) {
-            sum += number % 10;  
-            number /= 10;         
+            int digit = number % 10;  
+            reversed = reversed * 10 + digit; 
+            number /= 10;  
         }
         
-        System.out.println("The sum of digits is: " + sum);
+        System.out.println("The reversed number is: " + reversed);
         
         scanner.close();
     }
