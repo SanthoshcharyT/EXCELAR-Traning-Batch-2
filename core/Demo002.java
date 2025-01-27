@@ -1,3 +1,5 @@
+//Greatest Of Two Numbers
+
 public class Demo002 {
     public static void main(String[]main){
         int a = 20;
