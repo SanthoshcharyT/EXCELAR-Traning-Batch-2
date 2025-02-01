@@ -6,9 +6,10 @@ public class Demo016 {
 
         System.out.print("Enter a string: ");
         String n = s1.nextLine();
+        int a = n.length();
 
         String reversed = "";
-        for (int i = n.length() - 1; i >= 0; i--) {
+        for (int i = a - 1; i >= 0; i--) {
             reversed += n.charAt(i);
         }
 
