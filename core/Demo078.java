@@ -1,18 +1,17 @@
-//Copy array elements into another array
+//Print even numbers on the left side and odd numbers on the right side
 
 public class Demo078 {
     public static void main(String[] args) {
-        int arr1[] = {6,5,4,3,2,1,9,8,7};
-        int n = arr1.length;
-        int arr2[] = new int[n];
-
-        for(int i=0;i<n;i++){
-            arr2[i] = arr1[i];
-        }
-
-        for(int i=0;i<n;i++){
-            System.out.print(arr2[i] + " ");
+        int n = 10; 
+        
+        System.out.println("Even\tOdd");
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + "\t");
+            } else {
+                System.out.println(i);
+            }
         }
     }
-    
 }
+
